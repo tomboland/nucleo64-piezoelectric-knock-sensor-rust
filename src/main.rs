@@ -10,7 +10,6 @@ use crate::hal::{
 };
 use cortex_m_rt::entry;
 use panic_halt as _;
-//use stm32f4::stm32f401::{interrupt, Interrupt, NVIC};
 use stm32f4xx_hal as hal;
 
 #[entry]
