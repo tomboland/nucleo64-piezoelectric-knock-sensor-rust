@@ -1,7 +1,5 @@
 #![no_std]
 #![no_main]
-use cortex_m_semihosting::hprintln;
-// pick a panicking behavior
 use crate::hal::delay::Delay;
 use crate::hal::{
     adc::{config::AdcConfig, config::Resolution, config::SampleTime, Adc},
@@ -9,6 +7,7 @@ use crate::hal::{
     prelude::*,
 };
 use cortex_m_rt::entry;
+use cortex_m_semihosting::hprintln;
 use panic_halt as _;
 use stm32f4xx_hal as hal;
 
